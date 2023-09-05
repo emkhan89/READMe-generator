@@ -6,28 +6,34 @@ const inquirer = require("inquirer");
 // install node files by typing npm init -y  AND   npm i inquirer in the integrated terminal
 inquirer.prompt([
   {
-    type: "input",
-    message: "What is your name?",
-    name: "name",
+    type: "list",
+    message: "What is the title of your project?",
+    name: "filename",
   },
   {
     type: "input",
-    message: "your location",
-    name: "location",
+    message: "Provide a brief description of your project.",
+    name: "description",
   },
   {
     type: "input",
-    message: "your bio",
-    name: "bio",
+    message: "What are the steps required to install your project?",
+    name: "installation",
   },
   {
     type: "input",
-    message: "Your Linkin profile",
-    name: "Linkdin",
+    message: "Provide instructions and examples for use.",
+    name: "usage",
+  },
+  {
+    type: "input",
+    message:
+      "List your collaborators, if any, with links to their Github profiles.",
+    name: "contributors",
   },
   {
     type: "input",
     message: "your Github profile",
-    name: "Github",
+    name: "tests",
   },
 ]);
