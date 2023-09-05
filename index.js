@@ -45,3 +45,8 @@ inquirer.prompt([
     name: "tests",
   },
 ]);
+
+// TO DO
+// couldnt figure out how to debug the error code
+// write the file to the read me
+// create the function
