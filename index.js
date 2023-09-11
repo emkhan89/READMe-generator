@@ -2,6 +2,8 @@
 // ============================================================
 const fs = require("fs");
 const inquirer = require("inquirer");
+// import fs from "fs";
+// import inquirer from "inquirer";
 
 // Type node index.js in the intergrated terminal to test it.
 // ==========================================================
@@ -14,7 +16,7 @@ const inquirer = require("inquirer");
 
 inquirer.prompt([
   {
-    type: "list",
+    type: "input",
     message: "What is the title of your project?",
     name: "filename",
   },
