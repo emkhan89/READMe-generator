@@ -46,6 +46,11 @@ inquirer.prompt([
     message: "your Github profile",
     name: "tests",
   },
+  {
+    type: "input",
+    message: "does this test work?",
+    name: "test",
+  },
 ]);
 
 // TO DO
